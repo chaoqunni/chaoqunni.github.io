@@ -1,0 +1,234 @@
+/* general body properties */
+
+body {
+    font-weight: normal;
+    font-family: 'Verdana',sans-serif, 'Source Sans Pro', 'Open Sans', Helvetica, Arial;
+    font-size: 14px;
+}
+
+a, a:hover {
+    color: #990615;
+}
+
+.lead {
+    font-weight: normal;
+    font-family: 'Verdana',sans-serif, 'Source Sans Pro', 'Open Sans', Helvetica, Arial;
+    font-size: 15px;
+    padding: 20px;
+    margin-left: -15%;
+}
+
+.publication {
+    font-weight: normal;
+    font-family: 'Verdana',sans-serif, 'Source Sans Pro', 'Open Sans', Helvetica, Arial;
+    font-size: 17px;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+.label-msb {
+    background-color: #990615;
+}
+
+/* bootstrap properties */
+
+#msbnav {
+    background-color: #7D0612;
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+    border-color: #777777;
+}
+
+#msbnav .navbar-brand {
+    color: #DCDCDC;
+    font-size: 2.5em;
+    font-family: "Oswald", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+%    text-transform: uppercase;
+}
+
+#msbnav .navbar-brand a {
+    color: #DCDCDC;
+}
+
+#msbnav .navbar-brand a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar-brand, .navbar-nav li a {
+    line-height: 1.5em;
+    height: 1.5em;
+    padding-top: 0;
+}
+
+.sidenav {
+    margin-top: 20px;
+}
+
+/* Adapted from the Bootstrap docs for sidebar navigation + scrollspy */
+.sidenav .nav > li > a {
+    display: block;
+    padding: 5px 20px;
+}
+
+.sidenav .nav > li > a:hover,
+.sidenav .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #e5e3e9;
+    border-right: 1px solid #990615;
+}
+
+.sidenav .nav > .active > a,
+.sidenav .nav > .active:hover > a,
+.sidenav .nav > .active:focus > a {
+    font-weight: bold;
+    background-color: transparent;
+    border-right: 1px solid #990615;
+}
+
+/* Nav: second level */
+.sidenav .nav .nav {
+    margin-bottom: 8px;
+}
+
+.sidenav .nav .nav > li > a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    font-size: 90%;
+}
+
+@media (max-width: 1000px) {
+    .sidenav.affix {
+        position: static;
+        width: auto;
+        top: 0;
+    }
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+    background-color: #7D0612;
+}
+
+.text-success {
+    font-variant: small-caps;
+}
+
+.label {
+    font-weight: normal;
+}
+
+.paperimage {
+    /*border: 1px solid #787878;*/
+    width: 100%;
+    overflow: hidden;
+}
+
+.papers .old {
+    display: none;
+}
+
+.papers .paper-row {
+    margin-bottom: 0.5em;
+    vertical-align: top;
+    padding-left: 0px;
+}
+
+h4.title {
+    margin-top: 0px;
+}
+
+h4 {
+    font-family: 'Verdana';
+    font-size: 17px;
+
+}
+
+.teaching {
+    margin-top: 1em;
+    font-size: 12px;
+}
+
+.teching h4 {
+    margin-bottom: 0;
+}
+
+.vital-info {
+    margin-top: 1em;
+    font-size: 14px;
+}
+
+.vital-info h4 {
+    margin-bottom: 0;
+}
+
+.olddate, .olddate a {
+    color: #AAAAAA;
+}
+
+.faq {
+    text-align: justify;
+}
+
+.bio {
+    margin-top: 15px;
+}
+
+.news {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.btn-link {
+    padding: 2em 0px 2em 0px;
+    color: #990615;
+    font-weight: 300;
+}
+
+.past-course {
+    display: none;
+}
+
+.award {
+    /* more in label-msb */
+    margin-right: 10px;
+}
+
+.publication-files {
+    margin-top: 10px;
+}
+
+.coauthor {
+    /*white-space: nowrap;*/
+}
+
+.groupmoji {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 4px;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+#msb-img {
+  max-width: 70%;
+  height: auto;
+}
+
+.me
+{
+  font-size: 17px;
+}
+
+
+
+.officehour {
+    font-size: 14px;
+    line-height: 1.4; 
+}
+
