@@ -10,13 +10,7 @@ a, a:hover {
     color: #990615;
 }
 
-.lead {
-    font-weight: normal;
-    font-family: 'Verdana',sans-serif, 'Source Sans Pro', 'Open Sans', Helvetica, Arial;
-    font-size: 15px;
-    padding: 20px;
-    margin-left: -15%;
-}
+
 
 .publication {
     font-weight: normal;
@@ -216,8 +210,14 @@ h4 {
 }
 
 #msb-img {
-  max-width: 70%;
+  max-width: 90%;
   height: auto;
+}
+
+.lead {
+    font-weight: normal;
+    font-family: 'Verdana',sans-serif, 'Source Sans Pro', 'Open Sans', Helvetica, Arial;
+    font-size: 15px;
 }
 
 .me
