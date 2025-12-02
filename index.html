@@ -1,437 +1,906 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chaoqun Ni&thinsp;&middot;&thinsp;UW-Madison iSchool</title>
-    <meta name="google-site-verification" content="a_4c2DXcV2R11Yv-gIipttTVUz6KOa8tmGjikXhDXqg" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="Chaoqun Ni, Science of Science, Scholarly Data Analytics, Scholarly Communication, Bibliometrics, Informetrics, Scientometrics, Gender Disparities, Scientific Workforce">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Oswald:400,700' rel='stylesheet'type='text/css'>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  
+    <title>Dr. Chaoqun Ni - iSchool, University of Wisconsin-Madison </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image_uw.png">
+    <!-- 1. Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. Configure Tailwind Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        red: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            600: '#dc2626', // UW Madison Red approx
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- 3. Add styles for simple animations -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
 </head>
-<body>
-<div id="msbnav" class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href=".">Chaoqun Ni</a>
-      &middot;
-      <span class="hidden-sm hidden-xs">
-      <a href="https://ischool.wisc.edu/" target="_blank">UW-Madison iSchool</a>
-      </span>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-    
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-9">
-                    <img id="msb-img" src="profile.jpg" class="img-responsive" style="margin-bottom: 10px; margin-top:9px;">
-                </div> <!-- /col-md-4 -->
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="lead">
-                        
-                        Welcome! I am an Assistant Professor at the<a href="https://ischool.wisc.edu/" target="_blank"> Information School</a>, and co-director of the <a href="https://metasci.ischool.wisc.edu/" target="_blank">Metascience Research Lab </a> at University of Wisconsin-Madison. I am also an affiliated faculty member of the <a href="https://datascience.wisc.edu/" target="_blank"> Data Science Institute</a>, <a href="https://sts.wisc.edu/" target="_blank"> Holtz Center for Science & Technology Studies</a>, and<a href="https://cdha.wisc.edu/" target="_blank"> Center for Demography of Health and Aging (CDHA).</a> Prior to this, I was an Assistant Professor at the University of Iowa and Simmons University. I study science, scholarship, and the scientific workforce using massive data to inform decision-making in science policy and to better understand the doing of science. I teach in the areas of information technology, database management, statistical data analysis, data interoperability, information visualization, and research methods. I got my Ph.D. in Information Science (minor in Statistics) from the School of Informatics and Computing, Indiana University Bloomington.
-                    </p>
-                </div> <!-- /col-md-8 -->
-            </div> <!-- row -->
-      
-            <div class="bio">
-    <p>
-    <span style="font-weight: 500"><strong>I am looking for <span style="color:DarkRed" >highly-motivated Ph.D. students </span> to work on cutting-edge problems in the science of science, scientific workforce diversity, scholarly data mining & analytics, and science policy. Students with interests and background in NLP, statististics, sociology, and information science are welcome to apply. Please contact me <a href = "mailto: chaoqun.ni@wisc.edu">by email</a> if you are interested. </strong><br/>
-  
-    
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-12"><p class="publication">Selected Publications</p></div>
-            </div>
-              <div class="papers" id="papers">
-                      <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/tenure.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/tenure.pdf' target="_blank">
-                               Tenure and Research Trajectories </a></div>
-                        <div><a href='https://doi.org/10.48550/arXiv.2411.10575' target="_blank"><i> ArXiv</i></a> </div>
-                        <div> Giorgio Tripodi, Xiang Zheng, Yifan Qian, Dakota Murray, Benjamin F. Jones, Chaoqun Ni, Dashun Wang </div>
-                     </div>
-                </div>
-                  
-                  
-                   <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/gender_china.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/gender_china.pdf' target="_blank">
-                                Gender disparities in the research enterprise of China </a></div>
-                        <div><a href='https://doi.org/10.1002/asi.25009' target="_blank"><i> Humanities and Social Science Communications</i></a> </div>
-                        <div> Kai Li, Xiang Zheng, & Chaoqun Ni </div>
-                     </div>
-                </div>
-                  
-                    <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/alz.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/alz.pdf' target="_blank">
-                                Framework for assessing the risk to a field from fraudulent researchers</a></div>
-                        <div><a href='https://doi.org/10.1002/asi.25009' target="_blank"><i> Journal of the Association for Information Science and Technology </i></a> </div>
-                        <div> Chaoqun Ni, & B. Ian Hitchins </div>
-                     </div>
-                </div>
-                  
-                    <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/hbcuqss.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/hbcuqss.pdf' target="_blank">
-                                Faculty Mobility and Research Dynamics at Historically Black Colleges and Universities</a></div>
-                        <div><a href='https://doi.org/10.1162/qss_a_00334' target="_blank"><i> Quantitative Science Studies </i></a> </div>
-                        <div>Xiang Zheng, Erjia Yan, & Chaoqun Ni </div>
-                     </div>
-                </div>
+<body class="bg-slate-50">
+    <div id="root"></div>
 
-                 <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/anglicization.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/anglicization.pdf' target="_blank">
-                                The anglicization of science in China</a></div>
-                        <div><a href='https://doi.org/10.1093/reseval/rvae036' target="_blank"><i> Research Evaluation </i></a> </div>
-                        <div>Kai Li, Xiang Zheng, & Chaoqun Ni </div>
-                     </div>
-                </div>
+    <!-- 4. Load React, ReactDOM, and Babel (to compile JSX in browser) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-             <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/covidcite.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/covidcite.pdf' target="_blank">
-                                The significant yet short-term influence of research covidization on journal citation metrics</a></div>
-                        <div><a href='https://doi.org/10.1101/2023.11.09.566298' target="_blank"><i> Journal of the Association for Information Science and Technology </i></a> </div>
-                        <div>Xiang Zheng, & Chaoqun Ni </div>
-                     </div>
-                </div>
+    <!-- 5. React Code -->
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        
+        // --- ICONS (Embedded directly to fix CDN errors) ---
+        const IconWrapper = ({ children, size = 24, className = "", viewBox = "0 0 24 24" }) => (
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width={size} 
+                height={size} 
+                viewBox={viewBox} 
+                fill="currentColor" 
+                className={className}
+            >
+                {children}
+            </svg>
+        );
 
+        // Generic Icons (Stroke based)
+        const StrokeIcon = ({ children, size = 24, className = "" }) => (
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width={size} 
+                height={size} 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className={className}
+            >
+                {children}
+            </svg>
+        );
 
-             <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/nihextra.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/nihextra.pdf' target="_blank">
-                                Analysis of the comparative strengths of intramural and extramural grant funding mechanisms</a></div>
-                        <div><a href='https://doi.org/10.1101/2023.11.09.566298' target="_blank"><i> bioRxiv </i></a> </div>
-                        <div>Xiang Zheng, Qiyao Yang, Jai Potnuri, Chaoqun Ni, & B. Ian Hutchins</div>
-                     </div>
-                </div>
+        const BookOpen = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </StrokeIcon>
+        );
+        const GraduationCap = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 6 3 6 3 0 0 0 6-3v-3.5"/>
+            </StrokeIcon>
+        );
+        const Download = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+            </StrokeIcon>
+        );
+        const Mail = (props) => (
+            <StrokeIcon {...props}>
+                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </StrokeIcon>
+        );
+        const MapPin = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+            </StrokeIcon>
+        );
+        const FileText = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>
+            </StrokeIcon>
+        );
+        const ExternalLink = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            </StrokeIcon>
+        );
+        const Menu = (props) => (
+            <StrokeIcon {...props}>
+                <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+            </StrokeIcon>
+        );
+        const X = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+            </StrokeIcon>
+        );
+        const Users = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </StrokeIcon>
+        );
+        const Award = (props) => (
+            <StrokeIcon {...props}>
+                <circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </StrokeIcon>
+        );
+        const Database = (props) => (
+            <StrokeIcon {...props}>
+                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>
+            </StrokeIcon>
+        );
+        const Globe = (props) => (
+             <StrokeIcon {...props}>
+                <circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </StrokeIcon>
+        );
 
-                  
-                    <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/alm.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/alm.pdf' target="_blank">
-                                You do not receive enough recognition for your influential science</a></div>
-                        <div><a href='https://doi.org/10.1101/2023.09.07.556750' target="_blank"><i> bioRxiv </i></a> </div>
-                        <div>Salsabil Arabi, Chaoqun Ni, & B. Ian Hutchins</div>
-                     </div>
-                </div>
+        // --- BRAND ICONS (Using Images to prevent SVG twisting issues) ---
 
-                    <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href=''><img class='paperimage img img-responsive' src='papers/tenure.jpg' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://www.ideals.illinois.edu/items/130030' target="_blank">
-                                The tenure debate: How US faculty change their research practices post-tenure</a></div>
-                        <div><a href='https://www.ideals.illinois.edu/items/130030' target="_blank"><i> The 2024 iConference </i></a> </div>
-                        <div>Xiang Zheng, & Chaoqun Ni*</div>
-                     </div>
-                </div>
-                    <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='https://doi.org/10.1016/j.joi.2023.101423'><img class='paperimage img img-responsive' src='papers/retraction.jpg' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/retraction.pdf' target="_blank">
-                                The effectiveness of peer review in identifying issues leading to retractions</a></div>
-                        <div><a href='https://doi.org/10.1016/j.joi.2023.101423' target="_blank"><i> Journal of Informetrics </i></a> </div>
-                        <div>Xiang Zheng, Jiajing Chen, Alison Tollas, & Chaoqun Ni*</div>
-                     </div>
-                </div>
-                <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282704'><img class='paperimage img img-responsive' src='papers/rmp.PNG' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282704' target="_blank">
-                                Contextualizing gender disparities in online teaching evaluations for professors</a></div>
-                        <div><a href='https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282704' target="_blank"><i> PLOS ONE </i></a><a href='https://github.com/UWMadisonMetaScience/rmp'> | Data and Code</a></div>
-                        <div>Xiang Zheng, Shreyas Vastrad,Jibo He, & Chaoqun Ni*</div>
-                     </div>
-                </div>
-                <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='https://doi.org/10.1002/asi.24723'><img class='paperimage img img-responsive' src='papers/wiki1.jpg' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://doi.org/10.1002/asi.24723' target="_blank">
-                                Gender and country biases in Wikipedia citations to scholarly publications</a></div>
-                        <div><a href='https://doi.org/10.1002/asi.24723' target="_blank"><i> JASIST </i></a><a href='https://github.com/UWMadisonMetaScience/wikibias'> | Data and Code</a></div>
-                        <div>Xiang Zheng, Jiajing Chen, Erjia Yan, & Chaoqun Ni*</div>
-                     </div>
-                </div>
-               <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='https://link.springer.com/article/10.1007/s12564-022-09775-4'><img class='paperimage img img-responsive' src='papers/phdtraining.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://link.springer.com/article/10.1007/s12564-022-09775-4' target="_blank">
-                               The influencing mechanism of research training on Chinese STEM Ph.D. students’ career interests</a></div>
-                        <div><a href='https://link.springer.com/article/10.1007/s12564-022-09775-4' target="_blank"><i>Asia Pacific Education Review</i></a></div>
-                        <div>Xiang Zheng, Wenhui Zhou, Chaoqun Ni, & Chuanyi Wang</div>
-                     </div>
-                </div>
-             
-           <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='https://elifesciences.org/articles/78909'><img class='paperimage img img-responsive' src='papers/gender_gap.jpg' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://elifesciences.org/articles/78909' target="_blank">
-                                How parenthood contributes to gender gaps in academia</a></div>
-                        <div><a href='https://elifesciences.org/articles/78909' target="_blank"><i>elife </i></a><a href='https://github.com/UWMadisonMetaScience/parenting'> | Data and Code</a></div>
-                        <div>Xiang Zheng, Haimiao Yuan, & Chaoqun Ni*</div>
-                     </div>
-                </div>
-               <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/Gendered authorship.pdf'><img class='paperimage img img-responsive' src='papers/gender_authorship.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://www.science.org/doi/10.1126/sciadv.abe4639' target="_blank">
-                                The gendered Nature of Authorship</a></div>
-                        <div><a href='https://www.science.org/doi/10.1126/sciadv.abe4639' target="_blank"><i>Science Advances</i></a></div>
-                        <div>Chaoqun Ni, Elise Smith, Haimiao Yuan, Vincent Larivière,& Cassidy R. Sugimoto</div>
-                    </div>
-                </div>
-              
-               <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/literacy.pdf'><img class='paperimage img img-responsive' src='papers/literacy.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://journals.sagepub.com/doi/pdf/10.1177/0340035221989367' target="_blank">
-                                What we talk about when we talk about information literacy</a></div>
-                        <div> <a href='https://journals.sagepub.com/doi/pdf/10.1177/0340035221989367' target="_blank"><i>IFLA Journal</i></a></div>
-                        <div>Margaret Zimmerman, Chaoqun Ni</div>
-                    </div>
-                </div>
-         <!--<div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/COVID.pdf'><img class='paperimage img img-responsive' src='papers/COVID.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/COVID.pdf' target="_blank">
-                                Examining International Research Collaboration during the COVID-19 Pandemic using arXiv Preprints</a></div>
-                        <div><i>ISSI</i></a></div>
-                        <div>Jiangen He, Erjia Yan, Chaoqun Ni</div>
-                    </div>
-                </div> -->
-             <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/JOI_2019.pdf'><img class='paperimage img img-responsive' src='papers/hiring.jpg' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/JOI_2019.pdf' target="_blank">
-                                Standing on the shoulders of giants?—Faculty hiring in information schools</a></div>
-                        <div><i>Journal of Informetrics</i></div>
-                        <div>Zhiya Zuo, Kang Zhao, Chaoqun Ni</div>
-                    </div>
-                </div>
-              <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='https://www.nature.com/news/bibliometrics-global-gender-disparities-in-science-1.14321'><img class='paperimage img img-responsive' src='papers/gendermap.png' /></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://www.nature.com/news/bibliometrics-global-gender-disparities-in-science-1.14321' target="_blank">
-                                Bibliometrics: Global gender disparities in science</a></div>
-                        <div><a href='https://www.nature.com/news/bibliometrics-global-gender-disparities-in-science-1.14321' target="_blank"><i>Nature</i></a></div>
-                        <div>Vincent Larivière,Chaoqun Ni,Yves Gingras,Blaise Cronin & Cassidy R. Sugimoto</div>
-                    </div>
-                </div>
-                <div class='row paper-row'>
-                     <div class='col-md-2 col-xs-4'><a href='https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128000'><img class='paperimage img img-responsive' src='papers/plos.png'/></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128000' target="_blank">
-                                The academic advantage: Gender disparities in patenting</a></div>
-                        <div> <a href='https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128000' target="_blank"><i>PLOS ONE</i></a></div>
-                        <div>Cassidy R Sugimoto, Chaoqun Ni, Jevin D West, Vincent Larivière</div>
-                    </div>
-                </div>
-                <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/par.pdf'><img class='paperimage img img-responsive' src='papers/par.jpg'/></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/par.pdf' target="_blank">
-                                Examining the Evolution of the Field of Public Administration through a Bibliometric Analysis of Public Administration Review</a></div>
-                        <div><i>Public Administration Review</i></div>
-                        <div>Chaoqun Ni, Cassidy R Sugimoto, Alice Robbin
+        const GoogleScholar = ({ size = 32 }) => (
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" 
+                alt="Google Scholar"
+                style={{ width: size, height: size }}
+            />
+        );
+
+        const ResearchGate = ({ size = 32 }) => (
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" 
+                alt="ResearchGate"
+                style={{ width: size, height: size }}
+            />
+        );
+
+        const Linkedin = ({ size = 32 }) => (
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" 
+                alt="LinkedIn"
+                style={{ width: size, height: size }}
+            />
+        );
+
+        const Orcid = ({ size = 32 }) => (
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" 
+                alt="ORCID"
+                style={{ width: size, height: size }}
+            />
+        );
+
+        // --- DATA ---
+
+        const PROFILE = {
+            name: "Dr. Chaoqun Ni",
+            title: "Assistant Professor & Co-Director of Metascience Research Lab",
+            department: "The Information School (iSchool), School of Computing, Data & Information Sciences",
+            university: "University of Wisconsin-Madison",
+            email: "chaoqun DOT ni AT wisc DOT edu",
+            phone: "608-262-5068",
+            office: "Morgridge Hall, 1205 University Avenue",
+            scholarLink: "https://scholar.google.com/citations?user=aSuMS0oAAAAJ&hl=en",
+            researchGateLink: "https://www.researchgate.net/profile/Chaoqun_Ni",
+            linkedinLink: "https://www.linkedin.com/in/chaoqun-ni-1184b929a/",
+            orcidLink: "https://orcid.org/0000-0002-4130-7602",
+            cvLink: "CV_Ni.pdf", // Add your CV file path here (e.g., "CV_Ni.pdf")
+            about: (
+                <span>
+                    I am an Assistant Professor at the <a href="https://ischool.wisc.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Information School</a> and co-director of the <a href="https://metasci.ischool.wisc.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Metascience Research Lab</a> at <a href="https://www.wisc.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">UW-Madison</a>. I am also affiliated with the <a href="https://datascience.wisc.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Data Science Institute</a>, <a href="https://sts.wisc.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Holtz Center for Science & Technology Studies</a>, and <a href="https://cdha.wisc.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Center for Demography of Health and Aging</a>. I study science, scholarship, and the scientific workforce using massive data to inform decision-making in science policy and to better understand the doing of science. Prior to this, I was an Assistant Professor at the <a href="https://uiowa.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">University of Iowa</a> and <a href="https://www.simmons.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Simmons University</a>. I received my Ph.D. in Information Science from <a href="https://www.indiana.edu/" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Indiana University Bloomington</a>.
+                </span>
+            ),
+            interests: [
+                "Science of Science",
+                "Computational Social Science",
+                "Scientific Workforce Diversity",
+                "Science Policy",
+                "Scholarly Data Mining & Analytics"
+            ]
+        };
+
+        const NEWS = [
+            { 
+                date: "Dec 2025", 
+                text: (
+                    <span>
+                        Paper accepted: "You do not receive enough recognition for your influential science" in <em>PLOS Biology</em>. <a href="https://doi.org/10.1101/2023.09.07.556750" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">View Paper</a>
+                    </span>
+                )
+            },
+            { 
+                date: "Nov 2025", 
+                text: (
+                    <span>
+                        Varying Viewpoints Podcast with Erjia Yan and Robert Palmer on HBCU faculty in motion, by Rutgers Center for Minority Serving Institutions. <a href="https://soundcloud.com/user-219882508" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Listen</a>
+                    </span>
+                )
+            },
+            { 
+                date: "Oct 2025", 
+                text: (
+                    <span>
+                        Interview with <em>Science</em>: "When women researchers publish, media attention doesn’t always follow." <a href="https://www.science.org/content/article/when-women-researchers-publish-media-attention-doesn-t-always-follow" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Read Article</a>
+                    </span>
+                )
+            },
+            { 
+                date: "Jul 2025", 
+                text: (
+                    <span>
+                        Paper published: "Tenure and Research Trajectories" in <em>PNAS</em>. <a href="https://www.pnas.org/doi/10.1073/pnas.2500322122" target="_blank" rel="noreferrer" className="text-red-700 hover:underline">View Paper</a>
+                    </span>
+                )
+            },
+            { 
+                date: "Recent", 
+                text: "Awarded an NSF grant to study the mobility and retention of faculty at Historically Black Colleges and Universities (HBCUs)." 
+            }
+        ];
+
+        const PUBLICATIONS = [
+            {
+                id: 1,
+                title: "Tenure and Research Trajectories",
+                authors: "Tripodi, G., Zheng, X., Qian, Y., Murray, D., Jones, B.F., Ni, C., & Wang, D.",
+                journal: "Proceedings of the National Academy of Sciences (PNAS)",
+                year: 2025,
+                link: "https://doi.org/10.1073/pnas.2500322122",
+                tag: "Journal"
+            },
+            {
+                id: 2,
+                title: "You do not receive enough recognition for your influential science",
+                authors: "Arabi, S., Ni, C., & Hutchins, B.I.",
+                journal: "PLOS Biology",
+                year: "Accepted",
+                link: "https://doi.org/10.1101/2023.09.07.556750",
+                tag: "Journal"
+            },
+            {
+                id: 3,
+                title: "Analysis of the comparative strengths of intramural and extramural grant funding mechanisms",
+                authors: "Zheng, X., Yang, S., Potnuri, J., Ni, C., & Hutchins, B.I.",
+                journal: "eLife",
+                year: 2025,
+                link: "https://doi.org/10.7554/eLife.108929.1",
+                tag: "Journal"
+            },
+            {
+                id: 4,
+                title: "Equity in science journalism: Investigating gender disparities in news media coverage of scientific research",
+                authors: "Arabi, S., Zheng, X., Hutchins, B.I. & Ni, C.",
+                journal: "Science Communication",
+                year: 2025,
+                link: "https://doi.org/10.1177/10755470251360187",
+                tag: "Journal"
+            },
+            {
+                id: 10,
+                title: "The anglicization of science in China",
+                authors: "Li, K., Zheng, X., & Ni, C.",
+                journal: "Research Evaluation",
+                year: 2024,
+                link: "https://doi.org/10.1093/reseval/rvae036",
+                tag: "Journal"
+            },
+            {
+                id: 11,
+                title: "The significant yet short-term influence of research covidization on journal citation metrics",
+                authors: "Zheng, X., & Ni, C.",
+                journal: "Journal of the Association for Information Science and Technology (JASIST)",
+                year: 2024,
+                link: "https://doi.org/10.1002/asi.24939",
+                tag: "Journal"
+            },
+            {
+                id: 12,
+                title: "The effectiveness of peer review in identifying issues leading to retractions",
+                authors: "Zheng, X., Chen, J., Tollas, A., & Ni, C.",
+                journal: "Journal of Informetrics",
+                year: 2023,
+                link: "https://doi.org/10.1016/j.joi.2023.101423",
+                tag: "Journal"
+            },
+            {
+                id: 5,
+                title: "Gender differences in submission behavior exacerbate publication disparities in elite journals",
+                authors: "Ni, C., Basson, I., Badia, G., Tufenkji, N., Sugimoto, C.R., & Larivière, V.",
+                journal: "eLife",
+                year: 2025,
+                link: "https://elifesciences.org/reviewed-preprints/90049",
+                tag: "Journal"
+            },
+            {
+                id: 6,
+                title: "Gender and country biases in Wikipedia citations to scholarly publications",
+                authors: "Zheng, X., Chen, J., Yan, E., & Ni, C.",
+                journal: "Journal of the Association for Information Science and Technology (JASIST)",
+                year: 2023,
+                link: "https://doi.org/10.1002/asi.24723",
+                tag: "Journal"
+            },
+            {
+                id: 7,
+                title: "How parenthood contributes to gender gaps in academia",
+                authors: "Zheng, X., Yuan, H., & Ni, C.",
+                journal: "eLife",
+                year: 2022,
+                link: "https://doi.org/10.7554/eLife.78909",
+                tag: "Journal"
+            },
+            {
+                id: 8,
+                title: "The Gendered Nature of Authorship",
+                authors: "Ni, C., Smith, E., Yuan, H., Larivière, V., & Sugimoto, C.R.",
+                journal: "Science Advances",
+                year: 2021,
+                link: "https://www.science.org/doi/10.1126/sciadv.abe4639",
+                tag: "Journal"
+            }
+        ];
+
+        const TEACHING = [
+            { 
+                code: "LIS 351", 
+                title: "Introduction to Digital Information", 
+                term: "Fall 2020", 
+                level: "Undergraduate" 
+            },
+            { 
+                code: "LIS 407", 
+                title: "Storytelling with Data Visualization", 
+                term: "Spring 2022, 2023, 2024; Fall 2025", 
+                level: "Undergraduate" 
+            },
+            { 
+                code: "LIS 464", 
+                title: "Applied Database Design", 
+                term: "Spring 2022, 2023, 2024", 
+                level: "Undergraduate" 
+            },
+            { 
+                code: "LIS 707", 
+                title: "Data Visualization and Communication for Decision-Making", 
+                term: "Fall 2020, 2021, 2022, 2023, 2024, 2025; Spring 2021, 2023", 
+                level: "Graduate" 
+            },
+            { 
+                code: "LIS 751", 
+                title: "Database Design for Information Professionals", 
+                term: "Fall 2021, 2022; Spring 2022, 2023", 
+                level: "Graduate" 
+            },
+            { 
+                code: "LIS 925", 
+                title: "Doctoral Seminar: Professionalism, Writing, and Reading", 
+                term: "Spring 2021", 
+                level: "Graduate" 
+            },
+            { 
+                code: "LIS 975", 
+                title: "Doctoral Seminar in the Science of Science", 
+                term: "Fall 2023", 
+                level: "Graduate" 
+            }
+        ];
+
+        const RESEARCH_PROJECTS = [
+            { 
+                title: <a href="https://metasci.ischool.wisc.edu/" target="_blank" rel="noreferrer" className="hover:text-red-700 hover:underline">Metascience Research Lab</a>, 
+                description: "Co-directing a lab focused on using large-scale data to understand the scientific enterprise itself. We analyze publication patterns, citation networks, and workforce dynamics to inform science policy.", 
+                status: "Active", 
+                collaborators: "UW-Madison & External Partners" 
+            },
+            {
+                title: "AI and the Research Ecosystem",
+                description: (
+                    <div>
+                        This project investigates how Artificial Intelligence is reshaping the scientific research ecosystem, from discovery and dissemination to evaluation. We explore the implications of AI adoption on research practices, examining both the opportunities for accelerating innovation and the potential risks to scientific integrity and equity.
+                        <br/><br/>
+                        <strong>Key Outputs:</strong>
+                        <ul className="list-disc pl-5 mt-2 space-y-1">
+                            <li>
+                                Murray, D., Ni, C., Gu, W., & Hubbard, T. (2025). Using language models to label clusters of scientific documents. <em>Scientometrics</em>.
+                                <a href="https://link.springer.com/article/10.1007/s11192-025-05445-5" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                            <li>
+                                Liu, J., He, Y., Zheng, Z., Bu, Y., & Ni, C. (2025). AI-Assisted Writing Is Growing Fastest Among Non-English-Speaking and Less Established Scientists. <em>arXiv</em>.
+                                <a href="https://arxiv.org/abs/2511.15872" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                        </ul>
+                        <div className="mt-3 text-sm italic text-slate-600">
+                            See more publications from my group on <a href={PROFILE.scholarLink} target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Google Scholar</a>.
                         </div>
                     </div>
-                </div>
-                <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/fourfacet_final.pdf'><img class='paperimage img img-responsive' src='papers/fourfacet_final.jpg'/></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/fourfacet_final.pdf' target="_blank">
-                                Visualizing and comparing four facets of scholarly communication: producers, artifacts, concepts, and gatekeepers</a></div>
-                        <div><i>Scientometrics</i></div>
-                        <div>Chaoqun Ni, Cassidy R Sugimoto, Blaise Cronin
+                ),
+                status: "Ongoing",
+                collaborators: "Dakota Murray, Weiye Gu, Jialin Liu, et al."
+            },
+            {
+                title: "Gender Disparities in Science",
+                description: (
+                    <div>
+                        My research documents the systemic underrepresentation of women in science, revealing how disparities in productivity and impact track with broader societal indicators. I investigate mechanisms sustaining these inequities, such as differences in authorship credit, submission behaviors, and the parenthood penalty. Beyond publishing, my work shows how gender bias permeates the entire ecosystem, including patenting, teaching evaluations, and public visibility.
+                        <br/><br/>
+                        <strong>Key Outputs:</strong>
+                        <ul className="list-disc pl-5 mt-2 space-y-1">
+                            <li>
+                                Ni, C., Smith, E., Yuan, H., Larivière, V., & Sugimoto, C.R. (2021). The Gendered Nature of Authorship. <em>Science Advances</em>.
+                                <a href="https://www.science.org/doi/10.1126/sciadv.abe4639" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                            <li>
+                                Zheng, X., Yuan, H., & Ni, C. (2022). How parenthood contributes to gender gaps in academia. <em>eLife</em>.
+                                <a href="https://doi.org/10.7554/eLife.78909" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                        </ul>
+                        <div className="mt-3 text-sm italic text-slate-600">
+                            See more publications from my group on <a href={PROFILE.scholarLink} target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Google Scholar</a>.
                         </div>
                     </div>
-                </div>
-                <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/JournalAcceptanceRates.pdf'><img class='paperimage img img-responsive' src='papers/journalacceptance.jpg'/></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/JournalAcceptanceRates.pdf' target="_blank">
-                                Journal acceptance rates: A cross-disciplinary analysis of variability and relationships with journal measures</a></div>
-                        <div><i>Journal of the American Society for Information Science and Technology</i></div>
-                        <div>Cassidy R Sugimoto, Vincent Lariviére, Chaoqun Ni, Blaise Cronin</div>
+                ),
+                status: "Ongoing",
+                collaborators: "Cassidy R. Sugimoto, Vincent Larivière, Xiang Zheng, et al."
+            },
+            {
+                title: "Career Trajectories and Workforce Dynamics",
+                description: (
+                    <div>
+                        I investigate how early training, institutional contexts, and milestone events shape who enters and succeeds in the scientific workforce. My findings reveal that while interdisciplinary training is valued, it often hinders placement at top institutions, whereas diverse collaboration networks improve outcomes. I also demonstrate that tenure marks a pivotal turning point, shifting faculty focus toward more novel and original research rather than reducing productivity.
+                        <br/><br/>
+                        <strong>Key Outputs:</strong>
+                        <ul className="list-disc pl-5 mt-2 space-y-1">
+                            <li>
+                                Tripodi, G., Zheng, X., Qian, Y., Murray, D., Jones, B.F., Ni, C., & Wang, D.(2025). Tenure and Research Trajectories. <em>PNAS</em>.
+                                <a href="https://doi.org/10.1073/pnas.2500322122" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                            <li>
+                                Zuo, Z., Zhao, K., & Ni, C. (2019). Standing on the Shoulders of Giants? Faculty Hiring in Information Schools. <em>Journal of Informetrics</em>.
+                                <a href="https://doi.org/10.1016/j.joi.2019.01.007" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                        </ul>
+                        <div className="mt-3 text-sm italic text-slate-600">
+                            See more publications from my group on <a href={PROFILE.scholarLink} target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Google Scholar</a>.
+                        </div>
                     </div>
-                </div>
-                <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/vac.pdf'><img class='paperimage img img-responsive' src='papers/vac.jpg'/></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/vac.pdf' target="_blank">
-                                Venue‐author‐coupling: A measure for identifying disciplines through author communities</a></div>
-                        <div><i>Journal of the American Society for Information Science and Technology</i></div>
-                        <div>Chaoqun Ni, Cassidy R Sugimoto, Jiepu Jiang</div>
+                ),
+                status: "Active",
+                collaborators: "Dashun Wang, Xiang Zheng, et al."
+            },
+            {
+                title: "Peer Review, Research Integrity, and Science Evaluation",
+                description: (
+                    <div>
+                        I examine peer review and research evaluation as interconnected systems that influence assessment, dissemination, and career advancement. My work highlights inefficiencies in gatekeeping, such as the limited ability of reviewers to detect ethical breaches and significant imbalances in the global reviewer pool. Additionally, I develop frameworks to assess the downstream impact of fraudulent research and demonstrate how metrics like the Journal Impact Factor can distort scientific recognition.
+                        <br/><br/>
+                        <strong>Key Outputs:</strong>
+                        <ul className="list-disc pl-5 mt-2 space-y-1">
+                            <li>
+                                Ni, C., & Hutchins, B.I. (2025). Framework for assessing the risk to a field from fraudulent researchers. <em>JASIST</em>.
+                                <a href="https://doi.org/10.1002/asi.25009" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                            <li>
+                                Zheng, X., Chen, J., Tollas, A., & Ni, C. (2023). The effectiveness of peer review in identifying issues leading to retractions. <em>Journal of Informetrics</em>.
+                                <a href="https://doi.org/10.1016/j.joi.2023.101423" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                        </ul>
+                        <div className="mt-3 text-sm italic text-slate-600">
+                            See more publications from my group on <a href={PROFILE.scholarLink} target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Google Scholar</a>.
+                        </div>
                     </div>
-                </div>
-                 <!--<div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'><a href='papers/Degree_Closeness_and_Betweenness_Application_of_gr.pdf'><img class='paperimage img img-responsive' src='papers/groupcentrality.png'/></a></div>
-                    <div class='col-md-10 col-xs-8'>
-                        <div class='title'>
-                            <a href='papers/Degree_Closeness_and_Betweenness_Application_of_gr.pdf' target="_blank">
-                                Degree, closeness, and betweenness: Application of group centrality measurements to explore macro-disciplinary evolution diachronically</a></div>
-                        <div><i>ISSI</i></div>
-                        <div>Chaoqun Ni, Cassidy Sugimoto, Jiepu Jiang</div>
+                ),
+                status: "Active",
+                collaborators: "B. Ian Hutchins, Xiang Zheng, et al."
+            },
+            { 
+                title: <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2121861" target="_blank" rel="noreferrer" className="hover:text-red-700 hover:underline">HBCU Faculty Mobility & Retention</a>, 
+                description: (
+                    <div>
+                        Investigating the career trajectories, mobility patterns, and research dynamics of faculty members at Historically Black Colleges and Universities.
+                        <br/><br/>
+                        <strong>Key Outputs:</strong>
+                        <ul className="list-disc pl-5 mt-2 space-y-1">
+                            <li>
+                                Hong, X., Yan, E., Palmer, R., & Ni, C. (Accepted). Untangling Faculty Turnover: Exploring Retention and Attribution at HBCUs. <em>American Educational Research Journal</em>. 
+                                <a href="https://dx.doi.org/10.2139/ssrn.4900723" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                            <li>
+                                Zheng, X., Yan, E., & Ni, C. (2024). Faculty Mobility and Research Dynamics at HBCUs. <em>Quantitative Science Studies</em>. 
+                                <a href="https://doi.org/10.1162/qss_a_00334" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                </a>
+                            </li>
+                        </ul>
+                        <div className="mt-3 text-sm italic text-slate-600">
+                            See more publications from my group on <a href={PROFILE.scholarLink} target="_blank" rel="noreferrer" className="text-red-700 hover:underline">Google Scholar</a>.
+                        </div>
                     </div>
-                </div>-->
-            </div>
-            <a class="btn btn-link" style="margin-left"
-               href="https://scholar.google.com/citations?user=aSuMS0oAAAAJ&hl=en" target="_blank">More
-                publications...</a>
-        </div> <!-- /col-md-9 -->
-        <div class="col-md-3">
-            <div class="vital-info" style="margin-top: 0;">
-                <div><p class="me">Chaoqun Ni, Ph.D.<br>
-                Assistant Professor</p></div>
-                <div><a href="https://ischool.wisc.edu/" target="_blank">The Information School (iSchool)</a></div>
-                <div><a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a></div>
-            </div>
-    <div class="vital-info">
-                <div>
-          <a href="http://metasci.ischool.wisc.edu">Metascience Research Lab@UW-Madison</a>
-              
-                </div>
-            </div>
-            <div class="vital-info">
-                <div>
-          <a href="https://www.researchgate.net/profile/Chaoqun_Ni">ResearchGate</a>
-                    - <a href="https://scholar.google.com/citations?user=aSuMS0oAAAAJ&hl=en" target="_blank">Google Scholar</a>
-                </div>
-            </div>
-      <!--<div class="vital-info">
-                <div>
-          <a href="http://metasciencelab.github.io">Metascience Research Lab@UW-Madison</a>
-              
-                </div>
-            </div>-->
-            <hr>
-            <h4>Contact<h4>
-            <div class="vital-info">
-                <div><a href="mailto:chaoqun.ni@wisc.edu">chaoqun.ni@wisc.edu</a></div>
-            </div>
+                ),
+                status: "Finished (NSF Funded)", 
+                collaborators: "Erjia Yan (Drexel), Robert Palmer (Howard), Mat Kelly (Drexel), Jiangen He (UTK)" 
+            }
+        ];
 
-            <div class="vital-info">
-                <div>4685 Morgridge Hall(<a href="https://map.wisc.edu/s/yqknd0xi" target="_blank">map</a>)</div>
-                <div>1205 University Avenue, Madison, WI 53706</div>
-            </div>
+        // --- COMPONENTS ---
 
-            <hr>
-      
-            <div id="classes" class="teaching">
-                <h4>Teaching</h4>
-                <div class="row">
-                    <div class="col-md-3">Fall 2021</div>
-                    <div class="col-md-9">LIS 751: Database Management</div>
-                </div><br/>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9">LIS 707: Data Visualization and Communication for Decision Making</div>
-                </div><br/>
-        <div class="row">
-                    <div class="col-md-3">Spr 2022</div>
-                    <div class="col-md-9">LIS 751: Database Management</div>
-                </div><br/>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9">LIS464: Applied Database Design</div>
-                </div><br/>
+        const NavItem = ({ section, current, onClick, label, icon: Icon }) => (
+            <button
+                onClick={() => onClick(section)}
+                className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all duration-200 ${
+                current === section 
+                    ? "bg-red-50 text-red-700 font-medium" 
+                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                }`}
+            >
+                <Icon size={18} />
+                <span>{label}</span>
+            </button>
+        );
+
+        const SectionHeading = ({ children }) => (
+            <h2 className="text-2xl font-bold text-slate-800 border-b border-slate-200 pb-2 mb-6">
+                {children}
+            </h2>
+        );
+
+        const Card = ({ children, className = "" }) => (
+            <div className={`bg-white p-6 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow ${className}`}>
+                {children}
             </div>
-        <div class="teaching">
-                   <h4> Office hours</h4>
-                   <p class="officehour">No regular office hours currently; Please request appointments by email.</p>
+        );
+
+        const Badge = ({ type }) => {
+            const colors = {
+                Journal: "bg-purple-100 text-purple-700",
+                Conference: "bg-blue-100 text-blue-700",
+                Preprint: "bg-gray-100 text-gray-700",
+                Undergraduate: "bg-orange-100 text-orange-700",
+                Graduate: "bg-indigo-100 text-indigo-700"
+            };
+            return (
+                <span className={`text-xs font-semibold px-2.5 py-0.5 rounded ${colors[type] || "bg-gray-100 text-gray-700"}`}>
+                {type}
+                </span>
+            );
+        };
+
+        // --- MAIN APP ---
+
+        function App() {
+            const [activeSection, setActiveSection] = useState('home');
+            const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+            const [imageError, setImageError] = useState(false); // New state for image error handling
+
+            const handleNav = (section) => {
+                setActiveSection(section);
+                setMobileMenuOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+
+            const renderContent = () => {
+                switch (activeSection) {
+                    case 'research':
+                        return (
+                        <div className="animate-fade-in">
+                            <SectionHeading>Research Projects & Lab</SectionHeading>
+                            <div className="grid gap-6">
+                            {RESEARCH_PROJECTS.map((project, idx) => (
+                                <Card key={idx}>
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-xl font-semibold text-slate-800 mb-2">{project.title}</h3>
+                                    <span className="text-xs bg-red-50 text-red-700 px-2 py-1 rounded-full border border-red-100">
+                                    {project.status}
+                                    </span>
+                                </div>
+                                <div className="text-slate-600 mb-4 leading-relaxed">{project.description}</div>
+                                <div className="text-sm text-slate-500 bg-slate-50 p-3 rounded flex gap-2 items-center">
+                                    <Users size={16} />
+                                    <span><strong>Collaborators:</strong> {project.collaborators}</span>
+                                </div>
+                                </Card>
+                            ))}
+                            </div>
+                            
+                            <div className="mt-12">
+                            <SectionHeading>Research Interests</SectionHeading>
+                            <div className="flex flex-wrap gap-3">
+                                {PROFILE.interests.map((interest, i) => (
+                                <span key={i} className="px-4 py-2 bg-white border border-slate-200 rounded-full text-slate-700 shadow-sm flex items-center gap-2">
+                                    <Database size={14} className="text-slate-400"/>
+                                    {interest}
+                                </span>
+                                ))}
+                            </div>
+                            </div>
+                        </div>
+                        );
+
+                    case 'publications':
+                        return (
+                        <div className="animate-fade-in">
+                            <SectionHeading>Selected Publications</SectionHeading>
+                            <div className="space-y-4">
+                            {PUBLICATIONS.map((pub) => (
+                                <div key={pub.id} className="group bg-white p-5 rounded-lg border border-slate-100 hover:border-red-200 transition-all">
+                                <div className="flex justify-between items-start mb-1">
+                                    <h3 className="font-semibold text-lg text-slate-800 group-hover:text-red-700">
+                                    {pub.title}
+                                    </h3>
+                                    <Badge type={pub.tag} />
+                                </div>
+                                <p className="text-slate-600 mb-1 text-sm">{pub.authors}</p>
+                                <div className="flex items-center justify-between mt-2">
+                                    <p className="text-slate-500 italic text-sm">{pub.journal}, {pub.year}</p>
+                                    <a href={pub.link} className="flex items-center text-sm text-red-600 hover:underline">
+                                    View Paper <ExternalLink size={14} className="ml-1" />
+                                    </a>
+                                </div>
+                                </div>
+                            ))}
+                            </div>
+                            <div className="mt-8 text-center">
+                            <a href={PROFILE.scholarLink} target="_blank" rel="noreferrer" className="inline-flex items-center px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">
+                                <BookOpen size={18} className="mr-2" />
+                                View Full List on Google Scholar
+                            </a>
+                            </div>
+                        </div>
+                        );
+
+                    case 'teaching':
+                        return (
+                        <div className="animate-fade-in">
+                            <SectionHeading>Teaching</SectionHeading>
+                            <div className="grid md:grid-cols-2 gap-6 mb-12">
+                            {TEACHING.map((course, idx) => (
+                                <Card key={idx} className="border-l-4 border-l-red-600">
+                                <div className="flex justify-between items-start mb-2">
+                                    <span className="font-mono text-sm text-slate-500">{course.code}</span>
+                                    <Badge type={course.level} />
+                                </div>
+                                <h3 className="font-bold text-slate-800 text-lg mb-1">{course.title}</h3>
+                                <p className="text-slate-600 text-sm">{course.term}</p>
+                                </Card>
+                            ))}
+                            </div>
+
+                            <SectionHeading>Note for Students</SectionHeading>
+                            <Card>
+                            <p className="text-slate-700 leading-relaxed">
+                                I teach in the areas of information technology, database management, statistical data analysis, data interoperability, information visualization, and research methods.
+                                <br/><br/>
+                                <strong>Office Hours:</strong> No regular office hours currently; Please request appointments by email.
+                            </p>
+                            </Card>
+                        </div>
+                        );
+
+                    case 'home':
+                    default:
+                        return (
+                        <div className="animate-fade-in">
+                            {/* Hero Section */}
+                            <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+                            <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 bg-slate-100 rounded-full overflow-hidden border-4 border-white shadow-lg flex items-center justify-center text-slate-400">
+                                {/* Image with Fallback Logic */}
+                                {!imageError ? (
+                                    <img 
+                                        src="profile.jpg" 
+                                        alt="Dr. Chaoqun Ni" 
+                                        className="w-full h-full object-cover" 
+                                        onError={() => setImageError(true)}
+                                    />
+                                ) : (
+                                    <Users size={64} />
+                                )}
+                            </div>
+                            <div className="text-center md:text-left">
+                                <h1 className="text-4xl font-bold text-slate-900 mb-2">{PROFILE.name}</h1>
+                                <p className="text-xl text-slate-600 mb-1">{PROFILE.title}</p>
+                                <p className="text-lg text-slate-500 mb-6">{PROFILE.department}<br />{PROFILE.university}</p>
+                                <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                                <button onClick={() => handleNav('research')} className="bg-red-700 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-800 transition-colors shadow-sm">
+                                    Research Areas
+                                </button>
+                                <button onClick={() => handleNav('publications')} className="bg-white text-slate-700 border border-slate-300 px-6 py-2 rounded-lg font-medium hover:bg-slate-50 transition-colors shadow-sm">
+                                    Publications
+                                </button>
+                                <a href="https://metasci.ischool.wisc.edu/" target="_blank" rel="noreferrer" className="bg-white text-slate-700 border border-slate-300 px-6 py-2 rounded-lg font-medium hover:bg-slate-50 transition-colors shadow-sm flex items-center">
+                                    Metascience Research Lab <ExternalLink size={16} className="ml-2" />
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div className="grid md:grid-cols-3 gap-8">
+                            {/* About Column */}
+                            <div className="md:col-span-2">
+                                <SectionHeading>About Me</SectionHeading>
+                                <div className="text-slate-700 text-lg leading-relaxed mb-6">
+                                {PROFILE.about}
+                                </div>
+                                
+                                <h3 className="font-bold text-slate-800 mb-3 flex items-center">
+                                <Award className="mr-2 text-yellow-600" size={20} /> 
+                                Updates & News
+                                </h3>
+                                <ul className="space-y-4">
+                                {NEWS.map((item, i) => (
+                                    <li key={i} className="flex gap-3 text-slate-700 bg-white p-3 rounded border border-slate-100 shadow-sm">
+                                    <span className="font-mono text-sm font-bold text-red-600 shrink-0 pt-1 w-16">{item.date}</span>
+                                    <span>{item.text}</span>
+                                    </li>
+                                ))}
+                                </ul>
+                            </div>
+
+                            {/* Contact Sidebar */}
+                            <div className="md:col-span-1 space-y-6"> {/* Added space-y-6 for vertical spacing */}
+                                <Card className="bg-slate-50 border-none sticky top-24">
+                                <h3 className="font-bold text-slate-900 mb-4">Contact Info</h3>
+                                <div className="space-y-4 text-sm">
+                                    <div className="text-slate-700 mb-4 border-b border-slate-200 pb-4">
+                                        <p>Information School</p>
+                                        <p>School of Computing, Data and Information Sciences (CDIS)</p>
+                                        <p>College of Letters & Sciences</p>
+                                        <p>University of Wisconsin-Madison</p>
+                                    </div>
+
+                                    <div className="flex items-start gap-3">
+                                        <Mail className="text-red-600 shrink-0" size={18} />
+                                        <span className="text-slate-700 break-all">{PROFILE.email}</span>
+                                    </div>
+
+                                    <div className="flex items-start gap-3">
+                                        <MapPin className="text-red-600 shrink-0" size={18} />
+                                        <span className="text-slate-700">{PROFILE.office}<br/>Madison, WI 53706</span>
+                                    </div>
+                                    
+                                    <hr className="border-slate-200 my-4" />
+                                    
+                                    <div className="flex gap-4 justify-center">
+                                        {PROFILE.scholarLink && (
+                                            <a href={PROFILE.scholarLink} target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="Google Scholar">
+                                                <GoogleScholar size={32} />
+                                            </a>
+                                        )}
+                                        {PROFILE.researchGateLink && (
+                                            <a href={PROFILE.researchGateLink} target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="ResearchGate">
+                                                <ResearchGate size={32} />
+                                            </a>
+                                        )}
+                                        {PROFILE.linkedinLink && (
+                                            <a href={PROFILE.linkedinLink} target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="LinkedIn">
+                                                <Linkedin size={32} />
+                                            </a>
+                                        )}
+                                        {PROFILE.orcidLink && (
+                                            <a href={PROFILE.orcidLink} target="_blank" rel="noreferrer" className="hover:opacity-80 transition-opacity" title="ORCID">
+                                                <Orcid size={32} />
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+                                </Card>
+
+                                {/* New Recruitment Card */}
+                                <Card className="bg-red-50 border-red-100 sticky top-[32rem]"> {/* Adjusted sticky top position */}
+                                    <h3 className="font-bold text-red-800 mb-3 flex items-center">
+                                        <Users className="mr-2" size={20} />
+                                        Join My Group
+                                    </h3>
+                                    <p className="text-sm text-slate-700 leading-relaxed mb-4">
+                                        I welcome Ph.D., Master's, and undergraduate students to join my group. We work on broad topics in the science of science and computational social science, with a particular focus on understanding how AI influences the research ecosystem.
+                                    </p>
+                                    <a 
+                                        href={`mailto:${PROFILE.email}`} 
+                                        className="inline-block w-full text-center py-2 px-4 bg-white text-red-700 font-medium rounded border border-red-200 hover:bg-red-50 hover:border-red-300 transition-colors text-sm"
+                                    >
+                                        Email to Get in Touch
+                                    </a>
+                                </Card>
+
+                                {/* CV Download Button */}
+                                <a 
+                                    href={PROFILE.cvLink} 
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="flex items-center justify-center w-full py-3 px-4 bg-slate-800 text-white font-medium rounded shadow hover:bg-slate-700 transition-colors"
+                                >
+                                    <Download className="mr-2" size={20} />
+                                    Download Full CV
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        );
+                }
+            };
+
+            return (
+                <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+                <nav className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+                    <div className="max-w-6xl mx-auto px-4">
+                    <div className="flex justify-between items-center h-16">
+                        <div className="font-bold text-xl tracking-tight text-slate-800 cursor-pointer" onClick={() => handleNav('home')}>
+                        Chaoqun <span className="text-red-700">Ni</span>
+                        </div>
+
+                        <div className="hidden md:flex space-x-1">
+                        <NavItem section="home" current={activeSection} onClick={handleNav} label="Home" icon={Users} />
+                        <NavItem section="research" current={activeSection} onClick={handleNav} label="Research" icon={FileText} />
+                        <NavItem section="publications" current={activeSection} onClick={handleNav} label="Publications" icon={BookOpen} />
+                        <NavItem section="teaching" current={activeSection} onClick={handleNav} label="Teaching" icon={GraduationCap} />
+                        </div>
+
+                        <button 
+                        className="md:hidden p-2 text-slate-600 hover:bg-slate-100 rounded"
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        >
+                        {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
+                    </div>
+                    </div>
+
+                    {mobileMenuOpen && (
+                    <div className="md:hidden bg-white border-t border-slate-100 px-4 py-2 space-y-2 shadow-lg">
+                        <button onClick={() => handleNav('home')} className="block w-full text-left py-2 px-2 text-slate-700 hover:bg-slate-50 rounded">Home</button>
+                        <button onClick={() => handleNav('research')} className="block w-full text-left py-2 px-2 text-slate-700 hover:bg-slate-50 rounded">Research</button>
+                        <button onClick={() => handleNav('publications')} className="block w-full text-left py-2 px-2 text-slate-700 hover:bg-slate-50 rounded">Publications</button>
+                        <button onClick={() => handleNav('teaching')} className="block w-full text-left py-2 px-2 text-slate-700 hover:bg-slate-50 rounded">Teaching</button>
+                    </div>
+                    )}
+                </nav>
+
+                <main className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+                    {renderContent()}
+                </main>
+
+                <footer className="bg-white border-t border-slate-200 mt-auto py-8">
+                    <div className="max-w-6xl mx-auto px-4 text-center text-slate-500 text-sm">
+                    <p>&copy; {new Date().getFullYear()} {PROFILE.name}. All rights reserved.</p>
+                    <p className="mt-2">{PROFILE.department}, {PROFILE.university}.</p>
+                    </div>
+                </footer>
                 </div>
-        
-                <hr>
-    <!--<div id="service" class="vital-info">
-                    <h5>Services</h5>
-          <h5>Program Committee member:</h5>
-                    <div>SIGIR (2015-2020)</div>
-                    <div>CIKM (2014-2018, 2020)</div>
-                    <div>WSDM (2016-2021)</div>
-                    <div>ECIR (2014-2020)</div>
-                    <div>WWW (2015, 2018, 2020 SPC, 2021 SPC)</div>
-                    <div>IUI (2015, 2019-2021)</div>
-                    <div>JCDL (2020 SPC)</div>
-          <div>AAAI (2021)</div>
-                </div>
-            </div>-->   
-                
-        
-      <!--<div id="service" class="vital-info">
-                    <h5>Services</h5>
-          <h5>Program Committee member:</h5>
-                    <div>SIGIR (2015-2020)</div>
-                    <div>CIKM (2014-2018, 2020)</div>
-                    <div>WSDM (2016-2021)</div>
-                    <div>ECIR (2014-2020)</div>
-                    <div>WWW (2015, 2018, 2020 SPC, 2021 SPC)</div>
-                    <div>IUI (2015, 2019-2021)</div>
-                    <div>JCDL (2020 SPC)</div>
-          <div>AAAI (2021)</div>
-                </div>
-            </div>-->
-      
-      <div id="classes" class="teaching">
-        
-                <h4>Updates</h4>
-    <div class="row">
-      <div class="col-md-9"><p class="officehour">**I recently got an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2121861&HistoricalAwards=false" target="_blank">NSF grant</a> to study the mobility and retention of HBCU faculty!
-        </div>
-    </div>  
-    <div class="row">
-                    <div class="col-md-9"><p class="officehour">**I am currently looking for <b>highly motivated Ph.D. students</b> to work with me. Please send me an email if you are interested.**</p></div>
-                </div>
-                
-        
-            </div>
-      
-        </div> <!-- /row -->
-    </div> <!-- /container -->
+            );
+        }
+
+        // Render the App
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
 </body>
 </html>
