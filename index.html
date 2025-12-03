@@ -719,7 +719,8 @@
                                     <img 
                                         src="profile.jpg" 
                                         alt="Dr. Chaoqun Ni" 
-                                        className="w-full h-full object-cover" 
+                                        className="w-full h-full object-cover"
+                                        style={{ filter: 'contrast(1.05)' }} // Slight contrast boost to sharpen
                                         onError={() => setImageError(true)}
                                     />
                                 ) : (
@@ -903,4 +904,5 @@
         root.render(<App />);
     </script>
 </body>
+
 </html>
