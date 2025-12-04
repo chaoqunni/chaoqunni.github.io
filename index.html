@@ -6,7 +6,7 @@
     <title>Dr. Chaoqun Ni - iSchool, University of Wisconsin-Madison </title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="image_uw.png">
+    <link rel="icon" type="image/png" href="image_61c22a.png">
     <!-- 1. Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -102,6 +102,11 @@
         const Mail = (props) => (
             <StrokeIcon {...props}>
                 <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </StrokeIcon>
+        );
+        const Phone = (props) => (
+            <StrokeIcon {...props}>
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
             </StrokeIcon>
         );
         const MapPin = (props) => (
@@ -206,10 +211,11 @@
             ),
             interests: [
                 "Science of Science",
-                "Computational Social Science",
+                "Scholarly Data Mining & Analytics",
                 "Scientific Workforce Diversity",
                 "Science Policy",
-                "Scholarly Data Mining & Analytics"
+                "Computational Social Science",
+                "AI for Science"
             ]
         };
 
@@ -503,7 +509,7 @@
                     </div>
                 ),
                 status: "Active",
-                collaborators: "Dashun Wang, Xiang Zheng, et al."
+                collaborators: "Dashun Wang, Zhiya Zuo, Xiang Zheng, et al."
             },
             {
                 title: "Peer Review, Research Integrity, and Science Evaluation",
@@ -520,7 +526,7 @@
                                 </a>
                             </li>
                             <li>
-                                Zheng, X., Chen, J., Tollas, A., & Ni, C. (2023). The effectiveness of peer review in identifying issues leading to retractions. <em>Journal of Informetrics</em>.
+                                Zheng, X., Chen, J., Tollas, A., & Ni, C.(2023). The effectiveness of peer review in identifying issues leading to retractions. <em>Journal of Informetrics</em>.
                                 <a href="https://doi.org/10.1016/j.joi.2023.101423" target="_blank" rel="noreferrer" className="inline-flex items-center text-red-600 hover:underline text-sm ml-2">
                                     View Paper <ExternalLink size={14} className="ml-1" />
                                 </a>
@@ -731,7 +737,7 @@
                                     <img 
                                         src="profile.jpg" 
                                         alt="Dr. Chaoqun Ni" 
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover" 
                                         style={{ filter: 'contrast(1.05)' }} // Slight contrast boost to sharpen
                                         onError={() => setImageError(true)}
                                     />
@@ -742,7 +748,11 @@
                             <div className="text-center md:text-left">
                                 <h1 className="text-4xl font-bold text-slate-900 mb-2">{PROFILE.name}</h1>
                                 <p className="text-xl text-slate-600 mb-1">{PROFILE.title}</p>
-                                <p className="text-lg text-slate-500 mb-6">{PROFILE.department}<br />{PROFILE.university}</p>
+                                <p className="text-lg text-slate-500 mb-6">
+                                    {PROFILE.department}
+                                    <br />
+                                    {PROFILE.university}
+                                </p>
                                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                                 <button onClick={() => handleNav('research')} className="bg-red-700 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-800 transition-colors shadow-sm">
                                     Research Areas
@@ -780,12 +790,13 @@
                             </div>
 
                             {/* Contact Sidebar */}
-                            <div className="md:col-span-1 space-y-6"> {/* Added space-y-6 for vertical spacing */}
-                                <Card className="bg-slate-50 border-none sticky top-24">
+                            <div className="md:col-span-1 space-y-6 md:sticky md:top-24 h-fit"> {/* UPDATED: Added md:sticky, md:top-24, and h-fit to the parent container. Removed sticky from children to align properly. */}
+                                <Card className="bg-slate-50 border-none"> {/* Removed sticky from here */}
                                 <h3 className="font-bold text-slate-900 mb-4">Contact Info</h3>
                                 <div className="space-y-4 text-sm">
                                     <div className="text-slate-700 mb-4 border-b border-slate-200 pb-4">
-                                        <p>Information School, CDIS</p>
+                                        <p className="font-semibold text-slate-900">Information School</p>
+                                        <p>School of Computing, Data & Information Sciences</p>
                                         <p>College of Letters & Sciences</p>
                                         <p>University of Wisconsin-Madison</p>
                                     </div>
@@ -794,7 +805,10 @@
                                         <Mail className="text-red-600 shrink-0" size={18} />
                                         <span className="text-slate-700 break-all">{PROFILE.email}</span>
                                     </div>
-
+                                    <div className="flex items-start gap-3">
+                                        <Phone className="text-red-600 shrink-0" size={18} />
+                                        <span className="text-slate-700">{PROFILE.phone}</span>
+                                    </div>
                                     <div className="flex items-start gap-3">
                                         <MapPin className="text-red-600 shrink-0" size={18} />
                                         <span className="text-slate-700">{PROFILE.office}<br/>Madison, WI 53706</span>
@@ -828,7 +842,7 @@
                                 </Card>
 
                                 {/* New Recruitment Card */}
-                                <Card className="bg-red-50 border-red-100 sticky top-[32rem]"> {/* Adjusted sticky top position */}
+                                <Card className="bg-red-50 border-red-100"> {/* Removed sticky from here */}
                                     <h3 className="font-bold text-red-800 mb-3 flex items-center">
                                         <Users className="mr-2" size={20} />
                                         Join My Group
@@ -915,10 +929,4 @@
         root.render(<App />);
     </script>
 </body>
-
 </html>
-
-
-
-
-
